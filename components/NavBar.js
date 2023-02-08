@@ -4,8 +4,8 @@ const NavBar =({select, searchTap, setSearchTap, searchAccess, mod})=> {
 
     const [route] = useState([
         {name: "Home", route: "/"},
-        {name: "Tags", route: "/tags"},
-        {name: "Search", route: "/search"},
+        {name: "Doctor", route: "/doctor"},
+        {name: "Patients", route: "/patient"},
         {name: "Contact", route: "/contact"}
     ])
 
@@ -19,7 +19,7 @@ const NavBar =({select, searchTap, setSearchTap, searchAccess, mod})=> {
                             <div class="w-full justify-between flex items-center">
                                 <a class="flex-shrink-0 flex items-center justify-center" href="/">
                                     <img class="w-8 h-8" src="/icons/Fire.svg" alt="Workflow"/>
-                                    {!focus && <h1 className="f5 text-lg text-purple-500  p-3">Fire Blog</h1>}
+                                    {!focus && <h1 className="f5 text-lg text-purple-500  p-3">Mental Health</h1>}
                                 </a>
                                 {searchAccess && <form action={`/${mod}/${searchTap}`}><input onBlur={()=>{setFocus(false)}} onFocus={()=>{setFocus(true)}} onChange={(e)=>{setSearchTap(e.target.value)}} value={searchTap} className="focus:w-full w-full focus:opacity-95 p-2 rounded-md f4 bg-gray-900 opacity-90 mr-2 ml-2 block sm:hidden text-white search-border" placeholder="Search for something ...."/></form>}
 

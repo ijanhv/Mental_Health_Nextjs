@@ -54,8 +54,8 @@ const Home =({show, tags,  links, features, topView, topViewShow, lastUpdate, la
             <Content>
                 <Show data={show} links={links}/>
                 <Features data={features}/>
-                <TopView data={topView} topViewShow={topViewShow}/>
-                <SelectedTags data={tags} />
+                {/* <TopView data={topView} topViewShow={topViewShow}/> */}
+                {/* <SelectedTags data={tags} /> */}
                 <LastUpdate data={lastUpdate.items} text={lastUpdateText}/>
                 <Foot data={links}/>
             </Content>
